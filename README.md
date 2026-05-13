@@ -201,14 +201,6 @@ This project can be deployed using:
 
 ---
 
-## 👨‍💻 Author
-
-**Bonface Kanyi**
-- 🎓 BSc Applied Statistics with Computing
-- 💡 Data Science & AI Enthusiast
-
----
-
 ## ⭐ Acknowledgements
 
 - Kaggle dataset contributors
@@ -223,4 +215,107 @@ This project demonstrates a complete **end-to-end ML pipeline** including data p
 
 ---
 
+---
+
+# 🔵 NLP Upgrade (v2)
+
+A second version of the project was developed to demonstrate a production-style NLP workflow using TF-IDF vectorization and real-time API deployment.
+
+Unlike the original structured-feature model, v2 accepts raw email text input and performs real-time spam prediction through a deployed Flask API.
+
+---
+
+## 🧠 v2 Architecture
+
+```text
+User Email Text
+        ↓
+TF-IDF Vectorizer
+        ↓
+Logistic Regression
+        ↓
+Flask API
+        ↓
+Render Cloud Deployment
+```
+
+---
+
+## ⚙️ Technologies Used in v2
+
+- TF-IDF Vectorization
+- Logistic Regression
+- Flask REST API
+- Render Cloud Deployment
+- Git Branch Versioning
+
+---
+
+## 🌍 Live API Deployment
+
+The NLP demo API is deployed on Render and can process real-time email text input.
+
+### Endpoint
+
+```text
+https://real-time-email-spam-detection-system-1.onrender.com/predict
+```
+
+### Example Request
+
+```json
+{
+  "email": "Congratulations! You won free money now!"
+}
+```
+
+### Example Response
+
+```json
+{
+  "prediction": "Spam",
+  "spam_probability": 0.88
+}
+```
+
+---
+
+## 📁 v2 Files
+
+```text
+app_v2.py
+spam_model_v2.pkl
+test_api_v2.py
+Real-Time Email Spam Detection System v2.ipynb
+```
+
+---
+
+## 🌿 Git Branches
+
+| Branch | Description |
+|--------|-------------|
+| `main` | Original structured-feature spam classifier |
+| `nlp-upgrade-v2` | NLP demo version with TF-IDF and deployed API |
+
+---
+
+## 🚀 Key Learning Outcomes
+
+- Building end-to-end ML systems
+- NLP pipeline design
+- API development with Flask
+- Cloud deployment using Render
+- Real-time model inference
+- Git branching and version control
+
+---
+
+## 👨‍💻 Author
+
+**Bonface Kanyi**
+- 🎓 BSc Applied Statistics with Computing
+- 💡 Data Science & AI Enthusiast
+
+---
 > ⭐ **If you find this project helpful, feel free to star, fork, improve, and share it!**

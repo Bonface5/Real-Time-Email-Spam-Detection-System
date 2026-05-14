@@ -209,23 +209,54 @@ This project can be deployed using:
 
 ---
 
-## 📌 Summary
-
-This project demonstrates a complete **end-to-end ML pipeline** including data preprocessing, model training, evaluation, serialization, and real-time deployment using Flask. It showcases practical skills in **Machine Learning**, **NLP**, and **API development**.
-
----
 
 ---
 
 # 🔵 NLP Upgrade (v2)
 
-A second version of the project was developed to demonstrate a production-style NLP workflow using TF-IDF vectorization and real-time API deployment.
+A second version of the project was developed to demonstrate a production-style Natural Language Processing (NLP) workflow using TF-IDF vectorization, Flask API integration, and real-time cloud deployment.
 
-Unlike the original structured-feature model, v2 accepts raw email text input and performs real-time spam prediction through a deployed Flask API.
+Unlike the original structured-feature implementation, v2 accepts raw email text input and performs real-time spam prediction through a deployed REST API.
+
+This repository therefore demonstrates the evolution of an email spam detection system from a traditional machine learning workflow into a deployment-oriented NLP application.
 
 ---
 
-## 🧠 v2 Architecture
+# 🔍 Project Evolution: v1 vs v2
+
+## 🟢 Version 1 — Structured Feature Model
+
+The original implementation used engineered word-frequency features from the dataset to train a Logistic Regression classifier with very high predictive performance.
+
+### Characteristics
+
+- Structured numerical feature input
+- Feature scaling using StandardScaler
+- Traditional supervised ML workflow
+- Optimized for dataset performance
+- High classification accuracy
+- Statistical feature engineering approach
+
+---
+
+## 🔵 Version 2 — NLP Pipeline Demo
+
+The second implementation explores a production-oriented NLP workflow using TF-IDF vectorization and real-time API deployment.
+
+### Characteristics
+
+- Raw email text input
+- TF-IDF vectorization
+- Logistic Regression NLP pipeline
+- Real-time inference API
+- Flask backend integration
+- Render cloud deployment
+- Git branch versioning workflow
+- API-based prediction system
+
+---
+
+# 🧠 v2 Architecture
 
 ```text
 User Email Text
@@ -237,31 +268,59 @@ Logistic Regression
 Flask API
         ↓
 Render Cloud Deployment
+        ↓
+Live Real-Time Inference
 ```
 
 ---
 
-## ⚙️ Technologies Used in v2
+# ⚠️ Important Technical Note
 
-- TF-IDF Vectorization
-- Logistic Regression
-- Flask REST API
-- Render Cloud Deployment
-- Git Branch Versioning
+The original dataset used in this project was structured as engineered word-frequency features rather than raw email text.
+
+As a result:
+
+- v1 achieves stronger predictive accuracy on the provided dataset
+- v2 focuses on demonstrating NLP architecture and deployment workflow rather than maximizing benchmark accuracy
+
+This distinction reflects a realistic machine learning engineering progression:
+
+```text
+Dataset-Based Modeling
+            ↓
+Production-Style NLP Systems
+```
 
 ---
 
-## 🌍 Live API Deployment
+# ⚙️ Technologies Used in v2
 
-The NLP demo API is deployed on Render and can process real-time email text input.
+- Python
+- TF-IDF Vectorization
+- Logistic Regression
+- Scikit-learn
+- Flask REST API
+- Pickle Model Serialization
+- Render Cloud Deployment
+- Git & GitHub
+- Jupyter Notebook
+- VS Code
 
-### Endpoint
+---
+
+# 🌍 Live API Deployment
+
+The NLP demo API is deployed on Render and can process real-time email text input through a publicly accessible endpoint.
+
+## Endpoint
 
 ```text
 https://real-time-email-spam-detection-system-1.onrender.com/predict
 ```
 
-### Example Request
+---
+
+## Example Request
 
 ```json
 {
@@ -269,7 +328,9 @@ https://real-time-email-spam-detection-system-1.onrender.com/predict
 }
 ```
 
-### Example Response
+---
+
+## Example Response
 
 ```json
 {
@@ -280,7 +341,45 @@ https://real-time-email-spam-detection-system-1.onrender.com/predict
 
 ---
 
-## 📁 v2 Files
+# 🧪 API Testing Methods
+
+The deployed API can be tested using:
+
+- Python `requests`
+- Postman
+- Frontend web interfaces
+- External applications consuming the endpoint
+- Local Flask testing environments
+
+---
+
+# 🌐 Deployment Workflow
+
+The project follows a complete end-to-end deployment lifecycle:
+
+```text
+Train Model
+    ↓
+Evaluate Model
+    ↓
+Serialize Model (.pkl)
+    ↓
+Build Flask API
+    ↓
+Local API Testing
+    ↓
+GitHub Version Control
+    ↓
+Render Cloud Deployment
+    ↓
+Live Public Endpoint
+    ↓
+Real-Time Inference
+```
+
+---
+
+# 📁 v2 Files
 
 ```text
 app_v2.py
@@ -291,7 +390,7 @@ Real-Time Email Spam Detection System v2.ipynb
 
 ---
 
-## 🌿 Git Branches
+# 🌿 Git Branches
 
 | Branch | Description |
 |--------|-------------|
@@ -300,14 +399,37 @@ Real-Time Email Spam Detection System v2.ipynb
 
 ---
 
-## 🚀 Key Learning Outcomes
+# 🚀 Key Learning Outcomes
 
 - Building end-to-end ML systems
 - NLP pipeline design
+- Real-time inference systems
 - API development with Flask
 - Cloud deployment using Render
-- Real-time model inference
+- Model serialization with Pickle
 - Git branching and version control
+- Backend API integration
+- Deployment workflow management
+- Production-style ML architecture
+
+---
+
+# 💼 Skills Demonstrated
+
+This project demonstrates practical skills in:
+
+- Machine Learning
+- Natural Language Processing (NLP)
+- Logistic Regression Modeling
+- TF-IDF Feature Engineering
+- Flask API Development
+- REST API Design
+- Model Serialization
+- Real-Time Inference Systems
+- Git & GitHub Workflow
+- Cloud Deployment
+- Version Control with Branching
+- End-to-End ML Engineering
 
 ---
 
@@ -316,6 +438,12 @@ Real-Time Email Spam Detection System v2.ipynb
 **Bonface Kanyi**
 - 🎓 BSc Applied Statistics with Computing
 - 💡 Data Science & AI Enthusiast
+
+---
+
+## 📌 Summary
+
+This project demonstrates a complete **end-to-end ML pipeline** including data preprocessing, model training, evaluation, serialization, and real-time deployment using Flask. It showcases practical skills in **Machine Learning**, **NLP**, and **API development**.
 
 ---
 > ⭐ **If you find this project helpful, feel free to star, fork, improve, and share it!**
